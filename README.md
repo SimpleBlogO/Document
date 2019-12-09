@@ -25,6 +25,51 @@
 * 传输格式：`JSON`
 * 协议：`HTTPS`
 
+### 资源
+
+* user：用户(API数：6个)
+* column：用户的专栏(API数：1个)
+* article：用户的文章(API数：2个)
+* review：文章的评论(API数：1个)
+
+### 数据来源
+
+来自于`CSDN`的用户[Eayne](https://me.csdn.net/blog/Eayne)以及[pmlpml](https://me.csdn.net/blog/pmlpml)
+
+通过简单的网页爬取后按照json格式存储在了`server`仓库的`data`中
+
+* article：四篇
+
+  来自于`Eayne`用户的文章
+
+  * [gzip源代码阅读与分析](https://blog.csdn.net/Eayne/article/details/103037785)
+  * [go的web应用开发](https://blog.csdn.net/Eayne/article/details/102892431)
+  * [go与git知识](https://blog.csdn.net/Eayne/article/details/102632898)
+  * [selpg总结](https://blog.csdn.net/Eayne/article/details/102023781)
+
+* column：6个
+
+  来自于[pmlpml](https://me.csdn.net/column/pmlpml)用户的专栏：
+
+  * [linux&CentOS7](https://blog.csdn.net/pmlpml/category_6263790.html)
+  * [java和&Spring](https://blog.csdn.net/pmlpml/category_6514096.html)
+  * [docker](https://blog.csdn.net/pmlpml/category_6568857.html)
+  * [微服务](https://blog.csdn.net/pmlpml/category_6537821.html)
+  * [Unity 3D](https://blog.csdn.net/pmlpml/category_6920860.html)
+  * [Golang](https://blog.csdn.net/pmlpml/category_7245009.html)
+
+* review：4个
+
+  来自于[pmlpml](https://me.csdn.net/blog/pmlpml)
+
+  [Java Reactive 异步与并发编程](https://blog.csdn.net/pmlpml/article/details/70470416)的两条评论
+
+  [使用 Spring缓存抽象 支持 EhCache 和 Redis 混合部署](https://blog.csdn.net/pmlpml/article/details/53116377)的两条评论
+
+* user：4个
+
+  属于我们自己创建的4个账户，由于涉及到密码，因此在这不便说明，且账号信息已经直接写入到数据库中(而没有保存在)
+
 ### API说明
 
 * `user`对用户的基本操作
