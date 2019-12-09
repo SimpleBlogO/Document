@@ -13,9 +13,9 @@
 * [资源](#资源)
 * [数据来源](#数据来源)
 * [API说明](#API说明)
-* [API 使用示例](#API\ 使用示例)
-* [Open API设计](#Open\ API)
-* [Swagger editor + Swagger UI](#Swagger\ editor\ +\ Swagger\ UI)
+* [API使用示例](#API使用示例)
+* [OpenAPI设计](#OpenAPI)
+* [Swagger editor + Swagger UI](#Swagger editor + Swagger UI)
 * [ Swagger codegen](#\ Swagger\ codegen)
 
 ### 项目介绍
@@ -283,7 +283,7 @@
       | 404  | Article not found                                            |
       | 500  | internal server error                                        |
 
-### API 使用示例
+### API使用示例
 
 这里用`curl`展示两个API使用的示例：
 
@@ -314,7 +314,7 @@
   当查询一个不存在的用户的时候的响应(400)：
   ![](images/6.png)
 
-### Open API
+### OpenAPI
 
 基本的设计已经包含在`swagger.json`(`swagger.yaml`)文件中。其中按照yaml/json格式完成REST API的设计。下面是部分设计的部分API：
 
