@@ -8,6 +8,7 @@
 ## 目录
 
 * [项目介绍](#项目介绍)
+* [前端安装与启动](#前端安装与启动)
 * [后端安装与启动](#后端安装与启动)
 * [API风格](#API风格)
 * [资源](#资源)
@@ -17,7 +18,7 @@
 * [OpenAPI设计](#OpenAPI)
 * [Swagger-Editor/UI](#Swagger-Editor/UI)
 * [Swagger-codegen](#Swagger-codegen)
-* [前端安装与启动](#前端安装与启动)
+* [前端效果展示](#前端效果展示)
 
 ### 项目介绍
 
@@ -35,6 +36,22 @@
 此外，该项目除了支持下面所述的基本API功能以外，还支持：
 
 * **API Root**返回简单的API服务列表
+
+### 前端安装与启动
+
+* 安装仓库
+
+  `git clone https://github.com/SimpleBlogO/client.git`
+
+* 安装依赖
+
+  `npm install`
+
+* 启动前端
+
+  `npm run dev`
+
+  项目启动后可在`http://localhost:8080`启动网页主页
 
 ### 后端安装与启动
 
@@ -336,39 +353,24 @@
 该工具可以利用写好的API yaml文件自动创建多种语言的server和client模版，简化开发流程。
 
 * 依赖：java 8以上
-
 * 通过`Wget https://oss.sonatype.org/content/repositories/releases/io/swagger/swagger-codegen-cli/2.2.1/swagger-codegen-cli-2.2.1.jar`下载
 * `java -jar swagger-codegen-cli-2.2.1.jar generate -i swagger.json -l go-server`可以创建对应API的go-server
 * `java -jar swagger-codegen-cli-2.2.1.jar generate -i swagger.json -l javascript`可以创建对应API的javascript client
 
-### 前端安装与启动
+### 前段效果展示
 
-- 安装仓库
-
-  `git clone https://github.com/SimpleBlogO/client.git`
-
-- 安装依赖
-
-  `npm install`
-
-- 启动前端
-
-  `npm run dev`
-
-  项目启动后可在`http://localhost:8080`启动网页主页
-
-### 查看主页
+* 查看主页
 
 ![](./images/c1.PNG)
 
-### 查看文章
+* 查看文章
 
 ![](./images/c2.PNG)
 
-### 查看专栏
+* 查看专栏
 
 ![](./images/c3.PNG)
 
-### 查看评论
+* 查看评论
 
 ![](./images/c4.PNG)
