@@ -3,7 +3,7 @@ info:
   description: "This is a simple blog server."
   version: "1.0.0"
   title: "simple blog"
-host: "127.0.0.1"
+host: "127.0.0.1:8080"
 basePath: "/v1"
 tags:
 - name: "user"
@@ -20,7 +20,6 @@ paths:
       description: "This can only be done by the logged in user."
       operationId: "createUser"
       produces:
-      - "application/xml"
       - "application/json"
       parameters:
       - in: "body"
@@ -33,7 +32,9 @@ paths:
         200:
           description: "successful operation"
         400:
-          description: "username/email/phone has been used"
+          description: "username has been used"
+        500:
+          description: "internal server error"
   /user/login:
     get:
       tags:
@@ -42,7 +43,6 @@ paths:
       description: ""
       operationId: "loginUser"
       produces:
-      - "application/xml"
       - "application/json"
       parameters:
       - name: "username"
@@ -71,6 +71,8 @@ paths:
               description: "date in UTC when token expires"
         400:
           description: "Invalid username/password supplied"
+        500:
+          description: "internal server error"
   /user/logout:
     get:
       tags:
@@ -79,7 +81,6 @@ paths:
       description: ""
       operationId: "logoutUser"
       produces:
-      - "application/xml"
       - "application/json"
       parameters: []
       responses:
@@ -93,7 +94,6 @@ paths:
       description: ""
       operationId: "getUserByName"
       produces:
-      - "application/xml"
       - "application/json"
       parameters:
       - name: "username"
@@ -106,10 +106,10 @@ paths:
           description: "successful operation"
           schema:
             $ref: "#/definitions/User"
-        400:
-          description: "Invalid username supplied"
         404:
-          description: "User not found"
+          description: "user not found"
+        500:
+          description: "internal server error"
     put:
       tags:
       - "user"
@@ -117,7 +117,6 @@ paths:
       description: "This can only be done by the logged in user."
       operationId: "updateUser"
       produces:
-      - "application/xml"
       - "application/json"
       parameters:
       - name: "username"
@@ -132,10 +131,10 @@ paths:
         schema:
           $ref: "#/definitions/User"
       responses:
-        400:
-          description: "Invalid user supplied"
         404:
           description: "User not found"
+        500:
+          description: "internal server error"
     delete:
       tags:
       - "user"
@@ -143,7 +142,6 @@ paths:
       description: "This can only be done by the logged in user."
       operationId: "deleteUser"
       produces:
-      - "application/xml"
       - "application/json"
       parameters:
       - name: "username"
@@ -152,10 +150,14 @@ paths:
         required: true
         type: "string"
       responses:
-        400:
-          description: "Invalid username supplied"
+        200:
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/User"
         404:
-          description: "User not found"
+          description: "user not found"
+        500:
+          description: "internal server error"
   /article/{username}:
     get:
       tags:
@@ -164,7 +166,6 @@ paths:
       description: ""
       operationId: "getUserArticleByName"
       produces:
-      - "application/xml"
       - "application/json"
       parameters:
       - name: "username"
@@ -191,7 +192,6 @@ paths:
       description: ""
       operationId: "getUserArticleByNameAndID"
       produces:
-      - "application/xml"
       - "application/json"
       parameters:
       - name: "username"
@@ -222,7 +222,6 @@ paths:
       description: ""
       operationId: "getReviewByNameAndID"
       produces:
-      - "application/xml"
       - "application/json"
       parameters:
       - name: "username"
@@ -253,7 +252,6 @@ paths:
       description: ""
       operationId: "getColumnByName"
       produces:
-      - "application/xml"
       - "application/json"
       parameters:
       - name: "username"
