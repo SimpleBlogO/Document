@@ -5,6 +5,10 @@
 * 马易颜 17343085
 * 林国梁 17343073
 
+## 目录
+
+
+
 ### 项目介绍
 
 该项目简单的设计了一个博客网站的前端与后端，所用到的技术与思想包括：
@@ -16,6 +20,25 @@
 * **Swagger codegen**：根据设计好的Open API 自动创建go-server与javascript client
 * **boltDB**： 采用基于key-value存储的数据库高效存取数据
 * **JSON**：基于json的数据存储与传输
+* **Easy-mock**：测试服务端API的在线mock测试工具
+
+### 后端安装与启动
+
+* 安装仓库：
+
+  `git clone git@github.com:SimpleBlogO/server.git`
+
+* 启动项目:
+
+  `$server : go run main.go`
+
+  注意必须要在`server`目录下启动，这样服务器才会使用该文件夹下的`smo.db`，该数据库已经装好了来自csdn博客的真实数据。
+
+  项目启动后会在`localhost:8080`端口启动服务器监听，并且会在终端自动记录相关的访问服务。
+
+  ![](./images/7.png)
+
+  
 
 ### API
 
