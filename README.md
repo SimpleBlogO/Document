@@ -357,7 +357,7 @@
 * `java -jar swagger-codegen-cli-2.2.1.jar generate -i swagger.json -l go-server`可以创建对应API的go-server
 * `java -jar swagger-codegen-cli-2.2.1.jar generate -i swagger.json -l javascript`可以创建对应API的javascript client
 
-### 前段效果展示
+### 前端效果展示
 
 * 查看主页
 
