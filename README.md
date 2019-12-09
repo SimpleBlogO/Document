@@ -15,7 +15,7 @@
 * [API说明](#API说明)
 * [API使用示例](#API使用示例)
 * [OpenAPI设计](#OpenAPI)
-* [Swagger-editor+Swagger-UI](#Swagger-editor+Swagger-UI)
+* [Swagger-Editor/UI](#Swagger-Editor/UI)
 * [Swagger-codegen](#Swagger-codegen)
 
 ### 项目介绍
@@ -320,7 +320,7 @@
 
 ![](./images/2.png)
 
-### Swagger-editor+Swagger-UI
+### Swagger-Editor/UI
 
 通过在线的[Swagger web editor](https://swagger.io/tools/swagger-editor/f)进入到**live demo**后，导入`swagger.yaml`即可将API可视化，并在线编辑：
 
