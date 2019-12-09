@@ -359,16 +359,16 @@
 
 ### 查看主页
 
-![](./images/c1.png)
+![](./images/c1.PNG)
 
 ### 查看文章
 
-![](./images/c2.png)
+![](./images/c2.PNG)
 
 ### 查看专栏
 
-![](./images/c3.png)
+![](./images/c3.PNG)
 
 ### 查看评论
 
-![](./images/c4.png)
+![](./images/c4.PNG)
