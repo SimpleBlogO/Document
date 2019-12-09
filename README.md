@@ -16,7 +16,7 @@
 * [API使用示例](#API使用示例)
 * [OpenAPI设计](#OpenAPI)
 * [Swagger-editor+Swagger-UI](#Swagger-editor+Swagger-UI)
-* [ Swagger-codegen](#Swagger-codegen)
+* [Swagger-codegen](#Swagger-codegen)
 
 ### 项目介绍
 
@@ -326,7 +326,7 @@
 
 ![](./images/1.png)
 
-###Swagger-codegen
+### Swagger-codegen
 
 该工具可以利用写好的API yaml文件自动创建多种语言的server和client模版，简化开发流程。
 
